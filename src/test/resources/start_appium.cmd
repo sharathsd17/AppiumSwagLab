@@ -1,5 +1,6 @@
+
 @echo off
 echo Launching Appium Server...
 
-REM Use start /B to avoid opening a new window, and let Appium run in background
-start /B "" appium --base-path /wd/hub --port 4723
+REM Use npx to run appium from node_modules (local or global)
+start /B "" npx appium --base-path /wd/hub --port 4723
