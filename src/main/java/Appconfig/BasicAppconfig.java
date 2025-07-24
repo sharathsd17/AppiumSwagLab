@@ -17,7 +17,7 @@ public class BasicAppconfig
 	//options.setDeviceName("ZD222L5B8N");
 	  options.setDeviceName("Android Device");//added for jenkins 
 	options.setAutomationName("UiAutomator2");
-	String apkPath = System.getProperty("user.dir") + "\\Apps\\SauceLabs.apk";
+	String apkPath = System.getProperty("user.dir") + "/Apps/SauceLabs.apk";
 	options.setApp(apkPath);
 	options .setAppPackage("com.swaglabsmobileapp");
 	options.setAppActivity("com.swaglabsmobileapp.SplashActivity");
