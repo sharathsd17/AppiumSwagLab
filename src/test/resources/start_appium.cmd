@@ -1,10 +1,10 @@
 @echo off
 echo Launching Appium Server...
 
-REM Kill any old Appium instance on port 4723
+REM Kill if already running
 for /f "tokens=5" %%a in ('netstat -aon ^| find ":4723" ^| find "LISTENING"') do (
-    taskkill /F /PID %%a
+    taskkill /F /PID %%a >nul 2>&1
 )
 
-REM Start Appium minimized in the background
-start "" /MIN cmd /c "appium --base-path /wd/hub --port 4723 --log-level error"
+REM Start Appium server
+start "" /MIN cmd /c "appium --base-path /wd/hub --port 4723"
