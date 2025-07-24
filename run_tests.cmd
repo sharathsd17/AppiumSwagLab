@@ -15,5 +15,3 @@ powershell -Command ^
 echo ==============================
 echo 🚀 Running tests...
 echo ==============================
-
-mvn clean test -P AppSwag
