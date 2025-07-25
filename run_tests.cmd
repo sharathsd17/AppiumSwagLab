@@ -3,7 +3,9 @@ echo ==============================
 echo 🟢 Starting Appium server...
 echo ==============================
 
-powershell -ExecutionPolicy Bypass -File src\test\resources\start_appium.ps1
+call scripts\start_appium.cmd
+
+powershell -ExecutionPolicy Bypass -File scripts\waitForAppium.ps1
 
 echo ==============================
 echo 🧪 Running tests...
