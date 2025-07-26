@@ -49,24 +49,7 @@ public class ListenerImplementationUtility implements ITestListener{
 		
 		//Log the test status as PASS in extent reports
 		test.log(Status.PASS,methodName+" - Test PASS" );
-		//Capture the screenshot
-		SeleniumUtility s = new SeleniumUtility();
-		JavaUtility j = new JavaUtility();
 		
-		//Configure screenshot name
-		String screenshotName = methodName+"-"+j.getSystemDate();
-		
-		try {
-			
-			//this 1 line is capture screenshot on folder which i created -this is not for extentreport
-			//s.captureScreenShot(BaseClass.sdriver, screenshotName);
-			
-			// this is taking screenshot for extent report
-	            String base64Screenshot = ((TakesScreenshot) BaseClass.sdriver).getScreenshotAs(OutputType.BASE64);
-	            test.addScreenCaptureFromBase64String(base64Screenshot, methodName);
-	    } catch (Exception e) {
-	        e.printStackTrace();
-	    }
 	}
 		
 	
