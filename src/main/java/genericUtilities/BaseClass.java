@@ -76,8 +76,12 @@ public class BaseClass {
 
     @AfterClass(alwaysRun = true)
     public void closeApp() {
-        driver.quit();
-        System.out.println("=== App Closed ===");
+        if (driver != null) {
+            driver.quit();
+            System.out.println("=== App Closed ===");
+        } else {
+            System.out.println("⚠️ Driver was not initialized. Skipping quit.");
+        }
     }
 
     @AfterSuite(alwaysRun = true)
