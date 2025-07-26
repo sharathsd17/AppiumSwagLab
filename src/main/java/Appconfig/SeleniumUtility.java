@@ -288,7 +288,7 @@ public class SeleniumUtility
 			 * @return Path
 			 * @throws IOException
 			 */
-			public String captureScreenShot(AndroidDriver driver, String screenshotName) throws IOException
+			public String captureScreenShot(WebDriver driver, String screenshotName) throws IOException
 			{
 				TakesScreenshot ts = (TakesScreenshot) driver;
 				File src = ts.getScreenshotAs(OutputType.FILE);
