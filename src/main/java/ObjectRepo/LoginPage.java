@@ -49,7 +49,7 @@ public  class LoginPage {
     	 String Act=  driver.findElement(
              AppiumBy.androidUIAutomator("new UiSelector().text(\"Password is required\")")
          ).getText();
-         String expected ="Username and password do not match any user in this service.";
+         String expected ="Password is required";
    	  return  Act.equals(expected)?true : false;
      }
 
