@@ -9,13 +9,89 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">23,085</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">90,650</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">Base.MainC</td><td><a href="#m0">Remaining</a></td><td rowspan="1">1753378958332</td><td rowspan="1">5354</td></tr><tr class="passedeven"><td><a href="#m1">testLoginWithEmptyPassword</a></td><td rowspan="1">1753378950394</td><td rowspan="1">3006</td></tr><tr class="passedeven"><td><a href="#m2">unPwdInvalid</a></td><td rowspan="1">1753378953409</td><td rowspan="1">3057</td></tr><tr class="passedeven"><td><a href="#m3">validLogin</a></td><td rowspan="1">1753378956470</td><td rowspan="1">1858</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">testcases.LoginScenariosTest</td><td><a href="#m0">closeApp</a></td><td rowspan="1">1753503492553</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m1">launchApp</a></td><td rowspan="1">1753503480731</td><td rowspan="1">10388</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testcases.LoginScenariosTest</td><td><a href="#m2">initLoginPage</a></td><td rowspan="1">1753503491127</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">testcases.LoginScenariosTest</td><td><a href="#m3">testInvalidUsernamePassword</a></td><td rowspan="1">1753503492211</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m4">testLoginWithEmptyPassword</a></td><td rowspan="1">1753503491143</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testcases.ProductPageTest</td><td><a href="#m5">testAddAndRemoveProductFromCart</a></td><td rowspan="1">1753503512548</td><td rowspan="1">2145</td></tr><tr class="passedeven"><td><a href="#m6">verifyProductInCart</a></td><td rowspan="1">1753503522833</td><td rowspan="1">3449</td></tr><tr class="passedeven"><td><a href="#m7">verifyProductTitleDisplayed</a></td><td rowspan="1">1753503502998</td><td rowspan="1">1115</td></tr><tr class="passedodd"><td rowspan="3">testcases.SidebarTestCases</td><td><a href="#m8">allItemsVerification</a></td><td rowspan="1">1753503541117</td><td rowspan="1">3026</td></tr><tr class="passedodd"><td><a href="#m9">drawingVerification</a></td><td rowspan="1">1753503551873</td><td rowspan="1">3105</td></tr><tr class="passedodd"><td><a href="#m10">reesetApp</a></td><td rowspan="1">1753503563531</td><td rowspan="1">3087</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Base.MainC#Remaining</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Base.MainC#testLoginWithEmptyPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Base.MainC#unPwdInvalid</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Base.MainC#validLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testcases.LoginScenariosTest#closeApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at genericUtilities.BaseClass.closeApp(BaseClass.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.LoginScenariosTest#launchApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000&apos; exited with code 1&apos;; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: &apos;DESKTOP-DHSI56N&apos;, ip: &apos;192.168.31.232&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.LoginScenariosTest#initLoginPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.LoginScenariosTest#testInvalidUsernamePassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000&apos; exited with code 1&apos;; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: &apos;DESKTOP-DHSI56N&apos;, ip: &apos;192.168.31.232&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.LoginScenariosTest#testLoginWithEmptyPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000&apos; exited with code 1&apos;; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: &apos;DESKTOP-DHSI56N&apos;, ip: &apos;192.168.31.232&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.ProductPageTest#testAddAndRemoveProductFromCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.ProductPageTest#verifyProductInCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.ProductPageTest#verifyProductTitleDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.SidebarTestCases#allItemsVerification</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.SidebarTestCases#drawingVerification</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.SidebarTestCases#reesetApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

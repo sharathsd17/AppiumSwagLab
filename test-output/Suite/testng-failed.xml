@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Appconfig.ListenerImplementationUtility"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Base.MainC">
+      <class name="testcases.LoginScenariosTest">
         <methods>
-          <include name="setupPageObject"/>
-          <include name="tearDown"/>
+          <include name="initLoginPage"/>
+          <include name="dbDisconnect"/>
+          <include name="testInvalidUsernamePassword"/>
+          <include name="dbConnect"/>
+          <include name="loginToApp"/>
           <include name="testLoginWithEmptyPassword"/>
-          <include name="m1"/>
+          <include name="closeApp"/>
+          <include name="logoutFromApp"/>
+          <include name="launchApp"/>
         </methods>
-      </class> <!-- Base.MainC -->
+      </class> <!-- testcases.LoginScenariosTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

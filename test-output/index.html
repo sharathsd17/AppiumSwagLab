@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>E:\Appium\AppiumSwagLab\testng.xml</span>
+                    <span>E:\Appium\AppiumSwagLab\Basetestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">8 methods,  2 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.LoginScenariosTest" class="method navigator-link" hash-for-method="testInvalidUsernamePassword">testInvalidUsernamePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.LoginScenariosTest" class="method navigator-link" hash-for-method="testLoginWithEmptyPassword">testLoginWithEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +122,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Base.MainC" class="method navigator-link" hash-for-method="Remaining">Remaining</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.SidebarTestCases" class="method navigator-link" hash-for-method="allItemsVerification">allItemsVerification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Base.MainC" class="method navigator-link" hash-for-method="testLoginWithEmptyPassword">testLoginWithEmptyPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.SidebarTestCases" class="method navigator-link" hash-for-method="drawingVerification">drawingVerification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Base.MainC" class="method navigator-link" hash-for-method="unPwdInvalid">unPwdInvalid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.SidebarTestCases" class="method navigator-link" hash-for-method="reesetApp">reesetApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Base.MainC" class="method navigator-link" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProductPageTest" class="method navigator-link" hash-for-method="testAddAndRemoveProductFromCart">testAddAndRemoveProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProductPageTest" class="method navigator-link" hash-for-method="verifyProductInCart">verifyProductInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.ProductPageTest" class="method navigator-link" hash-for-method="verifyProductTitleDisplayed">verifyProductTitleDisplayed</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,17 +162,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Base.MainC</span>
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.LoginScenariosTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Remaining">
-                  </a> <!-- Remaining -->
-                  <span class="method-name">Remaining</span>
+                  <a name="testInvalidUsernamePassword">
+                  </a> <!-- testInvalidUsernamePassword -->
+                  <span class="method-name">testInvalidUsernamePassword</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000&apos; exited with code 1&apos;; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: &apos;DESKTOP-DHSI56N&apos;, ip: &apos;192.168.31.232&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -151,20 +204,88 @@
                   <a name="testLoginWithEmptyPassword">
                   </a> <!-- testLoginWithEmptyPassword -->
                   <span class="method-name">testLoginWithEmptyPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000&apos; exited with code 1&apos;; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: &apos;DESKTOP-DHSI56N&apos;, ip: &apos;192.168.31.232&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.SidebarTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="allItemsVerification">
+                  </a> <!-- allItemsVerification -->
+                  <span class="method-name">allItemsVerification</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="unPwdInvalid">
-                  </a> <!-- unPwdInvalid -->
-                  <span class="method-name">unPwdInvalid</span>
+                  <a name="drawingVerification">
+                  </a> <!-- drawingVerification -->
+                  <span class="method-name">drawingVerification</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validLogin">
-                  </a> <!-- validLogin -->
-                  <span class="method-name">validLogin</span>
+                  <a name="reesetApp">
+                  </a> <!-- reesetApp -->
+                  <span class="method-name">reesetApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.ProductPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddAndRemoveProductFromCart">
+                  </a> <!-- testAddAndRemoveProductFromCart -->
+                  <span class="method-name">testAddAndRemoveProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductInCart">
+                  </a> <!-- verifyProductInCart -->
+                  <span class="method-name">verifyProductInCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductTitleDisplayed">
+                  </a> <!-- verifyProductTitleDisplayed -->
+                  <span class="method-name">verifyProductTitleDisplayed</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +293,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Appium\AppiumSwagLab\testng.xml</span>
+            <span class="header-content">E:\Appium\AppiumSwagLab\Basetestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -184,7 +305,9 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Base.MainC&quot;/&gt;
+      &lt;class name=&quot;testcases.LoginScenariosTest&quot;/&gt;
+      &lt;class name=&quot;testcases.ProductPageTest&quot;/&gt;
+      &lt;class name=&quot;testcases.SidebarTestCases&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -198,7 +321,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -224,28 +347,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Remaining')
-data.setCell(0, 2, 'Base.MainC')
-data.setCell(0, 3, 5354);
+data.setCell(0, 1, 'verifyProductInCart')
+data.setCell(0, 2, 'testcases.ProductPageTest')
+data.setCell(0, 3, 3449);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'unPwdInvalid')
-data.setCell(1, 2, 'Base.MainC')
-data.setCell(1, 3, 3057);
+data.setCell(1, 1, 'drawingVerification')
+data.setCell(1, 2, 'testcases.SidebarTestCases')
+data.setCell(1, 3, 3105);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLoginWithEmptyPassword')
-data.setCell(2, 2, 'Base.MainC')
-data.setCell(2, 3, 3006);
+data.setCell(2, 1, 'reesetApp')
+data.setCell(2, 2, 'testcases.SidebarTestCases')
+data.setCell(2, 3, 3087);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validLogin')
-data.setCell(3, 2, 'Base.MainC')
-data.setCell(3, 3, 1858);
+data.setCell(3, 1, 'allItemsVerification')
+data.setCell(3, 2, 'testcases.SidebarTestCases')
+data.setCell(3, 3, 3026);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testAddAndRemoveProductFromCart')
+data.setCell(4, 2, 'testcases.ProductPageTest')
+data.setCell(4, 3, 2145);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyProductTitleDisplayed')
+data.setCell(5, 2, 'testcases.ProductPageTest')
+data.setCell(5, 3, 1115);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testInvalidUsernamePassword')
+data.setCell(6, 2, 'testcases.LoginScenariosTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testLoginWithEmptyPassword')
+data.setCell(7, 2, 'testcases.LoginScenariosTest')
+data.setCell(7, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -260,9 +399,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.SidebarTestCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">dbDisconnect</span>
+                <br/>
+                <span class="ignored-method-name">dbConnect</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.ProductPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">dbDisconnect</span>
+                <br/>
+                <span class="ignored-method-name">dbConnect</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -271,35 +428,148 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Base.MainC</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">m1</span>
+              <div class="chronological-class-name">testcases.LoginScenariosTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">dbConnect</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setupPageObject</span>
-                <span class="method-start">9332 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchApp</span>
+                <span class="method-start">323 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">testLoginWithEmptyPassword</span>
-                <span class="method-start">9450 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">unPwdInvalid</span>
-                <span class="method-start">12465 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validLogin</span>
-                <span class="method-start">15526 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Remaining</span>
-                <span class="method-start">17388 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.LoginScenariosTest.testLoginWithEmptyPassword())</span>
+                <span class="method-start">10731 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">10762 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.LoginScenariosTest.testInvalidUsernamePassword() throws java.lang.InterruptedE...)</span>
+                <span class="method-start">11803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">11811 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">22744 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeApp</span>
+                <span class="method-start">12145 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.ProductPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">12148 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">19311 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.ProductPageTest.verifyProductTitleDisplayed())</span>
+                <span class="method-start">19797 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductTitleDisplayed</span>
+                <span class="method-start">22590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">25415 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.ProductPageTest.testAddAndRemoveProductFromCart())</span>
+                <span class="method-start">28128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddAndRemoveProductFromCart</span>
+                <span class="method-start">32140 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">35974 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.ProductPageTest.verifyProductInCart())</span>
+                <span class="method-start">38451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductInCart</span>
+                <span class="method-start">42425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">46590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">49099 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.SidebarTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">49497 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initPages</span>
+                <span class="method-start">57056 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.SidebarTestCases.allItemsVerification())</span>
+                <span class="method-start">57309 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">allItemsVerification</span>
+                <span class="method-start">60709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">64998 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.SidebarTestCases.drawingVerification())</span>
+                <span class="method-start">67485 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">drawingVerification</span>
+                <span class="method-start">71465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">75289 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">loginToApp(public void testcases.SidebarTestCases.reesetApp())</span>
+                <span class="method-start">79137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">reesetApp</span>
+                <span class="method-start">83123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logoutFromApp</span>
+                <span class="method-start">87419 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApp</span>
+                <span class="method-start">90313 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LoginScenariosTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">dbDisconnect</span>
+                <span class="method-start">91160 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
