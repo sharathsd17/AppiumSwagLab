@@ -15,6 +15,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import genericUtilities.BaseClass;
+import io.appium.java_client.android.AndroidDriver;
+
 import org.openqa.selenium.io.FileHandler;
 
 
@@ -288,9 +292,11 @@ public class SeleniumUtility
 			{
 				TakesScreenshot ts = (TakesScreenshot) driver;
 				File src = ts.getScreenshotAs(OutputType.FILE);
-				File dst = new File(".\\ScreenShots\\"+screenshotName+".png");
+				File dst = new File("./ScreenShots/"+screenshotName+".png");
 				FileHandler.copy(src,dst);
 				return dst.getAbsolutePath(); //For extent Reports 
+				
+				 
 			}
 			
 }

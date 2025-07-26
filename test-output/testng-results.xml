@@ -1,41 +1,437 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="6" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-24T23:12:20 IST" name="Suite" finished-at="2025-07-24T23:12:43 IST" duration-ms="23085">
+  <suite started-at="2025-07-26T09:48:00 IST" name="Suite" finished-at="2025-07-26T09:49:31 IST" duration-ms="90650">
     <groups>
     </groups>
-    <test started-at="2025-07-24T23:12:20 IST" name="Test" finished-at="2025-07-24T23:12:43 IST" duration-ms="23085">
-      <class name="Base.MainC">
-        <test-method is-config="true" signature="m1()[pri:0, instance:Base.MainC@6a2b953e]" started-at="2025-07-24T23:12:20 IST" name="m1" finished-at="2025-07-24T23:12:30 IST" duration-ms="9314" status="PASS">
+    <test started-at="2025-07-26T09:48:00 IST" name="Test" finished-at="2025-07-26T09:49:31 IST" duration-ms="90650">
+      <class name="testcases.LoginScenariosTest">
+        <test-method is-config="true" signature="dbConnect()[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:00 IST" name="dbConnect" finished-at="2025-07-26T09:48:00 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:Base.MainC@6a2b953e]" started-at="2025-07-24T23:12:30 IST" name="setupPageObject" finished-at="2025-07-24T23:12:30 IST" duration-ms="110" status="PASS">
+        </test-method> <!-- dbConnect -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:00 IST" name="launchApp" finished-at="2025-07-26T09:48:11 IST" duration-ms="10388" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000' exited with code 1'; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: 'DESKTOP-DHSI56N', ip: '192.168.31.232'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000' exited with code 1'; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: 'DESKTOP-DHSI56N', ip: '192.168.31.232'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPageObject -->
-        <test-method signature="testLoginWithEmptyPassword()[pri:1, instance:Base.MainC@6a2b953e]" started-at="2025-07-24T23:12:30 IST" name="testLoginWithEmptyPassword" finished-at="2025-07-24T23:12:33 IST" duration-ms="3006" status="PASS">
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="initLoginPage()[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:11 IST" name="initLoginPage" finished-at="2025-07-26T09:48:11 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initLoginPage -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:11 IST" name="loginToApp" finished-at="2025-07-26T09:48:11 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginScenariosTest.testLoginWithEmptyPassword()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="testLoginWithEmptyPassword()[pri:1, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:11 IST" name="testLoginWithEmptyPassword" finished-at="2025-07-26T09:48:11 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000' exited with code 1'; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: 'DESKTOP-DHSI56N', ip: '192.168.31.232'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000' exited with code 1'; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: 'DESKTOP-DHSI56N', ip: '192.168.31.232'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithEmptyPassword -->
-        <test-method signature="unPwdInvalid()[pri:2, instance:Base.MainC@6a2b953e]" started-at="2025-07-24T23:12:33 IST" name="unPwdInvalid" finished-at="2025-07-24T23:12:36 IST" duration-ms="3057" status="PASS">
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:11 IST" name="logoutFromApp" finished-at="2025-07-26T09:48:12 IST" duration-ms="1038" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- unPwdInvalid -->
-        <test-method signature="validLogin()[pri:3, instance:Base.MainC@6a2b953e]" started-at="2025-07-24T23:12:36 IST" name="validLogin" finished-at="2025-07-24T23:12:38 IST" duration-ms="1858" status="PASS">
+        </test-method> <!-- logoutFromApp -->
+        <test-method signature="testInvalidUsernamePassword()[pri:2, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:12 IST" name="testInvalidUsernamePassword" finished-at="2025-07-26T09:48:12 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000' exited with code 1'; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: 'DESKTOP-DHSI56N', ip: '192.168.31.232'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\user\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s ZD222L5B8N shell am start -n io.appium.settings/.Unlock -c android.intent.category.LAUNCHER -a android.intent.action.MAIN -f 0x10200000' exited with code 1'; Command output: Error type 3
+Error: Activity class {io.appium.settings/io.appium.settings.Unlock} does not exist.
+ 
+Host info: host: 'DESKTOP-DHSI56N', ip: '192.168.31.232'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.swaglabsmobileapp.SplashActivity, appium:appWaitActivity=*, appium:deviceName=Android Device, platformName=ANDROID, appium:automationName=UiAutomator2, appium:app=E:\Appium\AppiumSwagLab/Apps/SauceLabs.apk, appium:appPackage=com.swaglabsmobileapp}], desiredCapabilities=Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}}]
+Capabilities {appium:app: E:\Appium\AppiumSwagLab/App..., appium:appActivity: com.swaglabsmobileapp.Splas..., appium:appPackage: com.swaglabsmobileapp, appium:appWaitActivity: *, appium:automationName: UiAutomator2, appium:deviceName: Android Device, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at genericUtilities.BaseClass.launchApp(BaseClass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin -->
-        <test-method signature="Remaining()[pri:4, instance:Base.MainC@6a2b953e]" started-at="2025-07-24T23:12:38 IST" name="Remaining" finished-at="2025-07-24T23:12:43 IST" duration-ms="5354" status="PASS">
+        </test-method> <!-- testInvalidUsernamePassword -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:12 IST" name="loginToApp" finished-at="2025-07-26T09:48:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginScenariosTest.testInvalidUsernamePassword() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Remaining -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Base.MainC@6a2b953e]" started-at="2025-07-24T23:12:43 IST" name="tearDown" finished-at="2025-07-24T23:12:43 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- loginToApp -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:12 IST" name="logoutFromApp" finished-at="2025-07-26T09:48:12 IST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Base.MainC -->
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:48:12 IST" name="closeApp" finished-at="2025-07-26T09:48:12 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.driver" is null
+at genericUtilities.BaseClass.closeApp(BaseClass.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="dbDisconnect()[pri:0, instance:testcases.LoginScenariosTest@ba54932]" started-at="2025-07-26T09:49:31 IST" name="dbDisconnect" finished-at="2025-07-26T09:49:31 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbDisconnect -->
+      </class> <!-- testcases.LoginScenariosTest -->
+      <class name="testcases.ProductPageTest">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:12 IST" name="launchApp" finished-at="2025-07-26T09:48:19 IST" duration-ms="7163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="initPages()[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:19 IST" name="initPages" finished-at="2025-07-26T09:48:20 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:20 IST" name="loginToApp" finished-at="2025-07-26T09:48:22 IST" duration-ms="2793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.ProductPageTest.verifyProductTitleDisplayed()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="verifyProductTitleDisplayed()[pri:1, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:22 IST" name="verifyProductTitleDisplayed" finished-at="2025-07-26T09:48:24 IST" duration-ms="1115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductTitleDisplayed -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:25 IST" name="logoutFromApp" finished-at="2025-07-26T09:48:28 IST" duration-ms="2710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:28 IST" name="loginToApp" finished-at="2025-07-26T09:48:32 IST" duration-ms="4012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.ProductPageTest.testAddAndRemoveProductFromCart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="testAddAndRemoveProductFromCart()[pri:2, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:32 IST" name="testAddAndRemoveProductFromCart" finished-at="2025-07-26T09:48:34 IST" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddAndRemoveProductFromCart -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:36 IST" name="logoutFromApp" finished-at="2025-07-26T09:48:38 IST" duration-ms="2477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:38 IST" name="loginToApp" finished-at="2025-07-26T09:48:42 IST" duration-ms="3974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.ProductPageTest.verifyProductInCart()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="verifyProductInCart()[pri:3, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:42 IST" name="verifyProductInCart" finished-at="2025-07-26T09:48:46 IST" duration-ms="3449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductInCart -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:46 IST" name="logoutFromApp" finished-at="2025-07-26T09:48:49 IST" duration-ms="2508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:testcases.ProductPageTest@236e3f4e]" started-at="2025-07-26T09:48:49 IST" name="closeApp" finished-at="2025-07-26T09:48:49 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- testcases.ProductPageTest -->
+      <class name="testcases.SidebarTestCases">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:48:49 IST" name="launchApp" finished-at="2025-07-26T09:48:57 IST" duration-ms="7558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="initPages()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:48:57 IST" name="initPages" finished-at="2025-07-26T09:48:57 IST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPages -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:48:57 IST" name="loginToApp" finished-at="2025-07-26T09:49:01 IST" duration-ms="3399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SidebarTestCases.allItemsVerification()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="allItemsVerification()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:01 IST" name="allItemsVerification" finished-at="2025-07-26T09:49:04 IST" duration-ms="3026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allItemsVerification -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:05 IST" name="logoutFromApp" finished-at="2025-07-26T09:49:07 IST" duration-ms="2486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:07 IST" name="loginToApp" finished-at="2025-07-26T09:49:11 IST" duration-ms="3980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SidebarTestCases.drawingVerification()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="drawingVerification()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:11 IST" name="drawingVerification" finished-at="2025-07-26T09:49:14 IST" duration-ms="3105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawingVerification -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:15 IST" name="logoutFromApp" finished-at="2025-07-26T09:49:19 IST" duration-ms="3848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="loginToApp(java.lang.reflect.Method)[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:19 IST" name="loginToApp" finished-at="2025-07-26T09:49:23 IST" duration-ms="3986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.SidebarTestCases.reesetApp()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="reesetApp()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:23 IST" name="reesetApp" finished-at="2025-07-26T09:49:26 IST" duration-ms="3087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reesetApp -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:27 IST" name="logoutFromApp" finished-at="2025-07-26T09:49:30 IST" duration-ms="2893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:testcases.SidebarTestCases@3cc1435c]" started-at="2025-07-26T09:49:30 IST" name="closeApp" finished-at="2025-07-26T09:49:31 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- testcases.SidebarTestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,6 +3,8 @@ package Appconfig;
 
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -12,6 +14,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import genericUtilities.BaseClass;
 
 /**
  * This class provides implementation to ITestListener Interface of TestNG
@@ -45,8 +49,27 @@ public class ListenerImplementationUtility implements ITestListener{
 		
 		//Log the test status as PASS in extent reports
 		test.log(Status.PASS,methodName+" - Test PASS" );
+		//Capture the screenshot
+		SeleniumUtility s = new SeleniumUtility();
+		JavaUtility j = new JavaUtility();
 		
+		//Configure screenshot name
+		String screenshotName = methodName+"-"+j.getSystemDate();
+		
+		try {
+			
+			//this 1 line is capture screenshot on folder which i created -this is not for extentreport
+			s.captureScreenShot(BaseClass.sdriver, screenshotName);
+			
+			// this is taking screenshot for extent report
+	            String base64Screenshot = ((TakesScreenshot) BaseClass.sdriver).getScreenshotAs(OutputType.BASE64);
+	            test.addScreenCaptureFromBase64String(base64Screenshot, methodName);
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
 	}
+		
+	
 
 	public void onTestFailure(ITestResult result) {
 		
@@ -72,11 +95,11 @@ public class ListenerImplementationUtility implements ITestListener{
 		
 		try {
 			
-			String path = s.captureScreenShot(BasicLogin.sDriver, screenshotName);
-			//String path = s.captureScreenShot(BasicLogin.sDriver, screenshotName);
+			s.captureScreenShot(BaseClass.sdriver, screenshotName);
 			
-			//Attach the screenshot to extent report
-			test.addScreenCaptureFromPath(path, screenshotName);
+			String base64Screenshot = ((TakesScreenshot) BaseClass.sdriver).getScreenshotAs(OutputType.BASE64);
+            test.addScreenCaptureFromBase64String(base64Screenshot, methodName);
+			
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

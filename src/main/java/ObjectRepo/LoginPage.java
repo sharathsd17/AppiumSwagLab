@@ -2,10 +2,12 @@ package ObjectRepo;
 
 import java.time.Duration;
 
+import org.asynchttpclient.util.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.asserts.Assertion;
 
 import dev.failsafe.internal.util.Assert;
 import dev.failsafe.internal.util.Assert.*;
@@ -43,17 +45,22 @@ public  class LoginPage {
     	 getLoginBtn().click();
      }
      
-     public void EmptyPassword(AndroidDriver driver )
-     {
-    	 String passisEmpty=driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Password is required\")")).getText();
-    	 System.out.println(passisEmpty.equals("Password is required")? passisEmpty+":pass":passisEmpty+":fail");
+     public Boolean getEmptyPasswordError() {
+    	 String Act=  driver.findElement(
+             AppiumBy.androidUIAutomator("new UiSelector().text(\"Password is required\")")
+         ).getText();
+         String expected ="Password is required";
+   	  return  Act.equals(expected)?true : false;
      }
-     public void unPwdInvalid(AndroidDriver driver )
-     {
-    	 String errorMsg = driver.findElement(
-    			    AppiumBy.androidUIAutomator("new UiSelector().textContains(\"do not match\")")
-    			).getText();
-    			System.out.println(errorMsg.equals("Username and password do not match any user in this service.")?errorMsg+":valiedMsg":errorMsg+":Msg is Invalid");
-    			
+
+     public Boolean getInvalidLoginError() {
+         
+    	 String Act= driver.findElement(
+             AppiumBy.androidUIAutomator("new UiSelector().textContains(\"do not match\")")
+         ).getText();
+    	  String expected ="Username and password do not match any user in this service.";
+    	  return  Act.equals(expected)?true : false;
+		
+    	 
      }
 }
