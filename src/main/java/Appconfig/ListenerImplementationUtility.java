@@ -59,7 +59,7 @@ public class ListenerImplementationUtility implements ITestListener{
 		try {
 			
 			//this 1 line is capture screenshot on folder which i created -this is not for extentreport
-			s.captureScreenShot(BaseClass.sdriver, screenshotName);
+			//s.captureScreenShot(BaseClass.sdriver, screenshotName);
 			
 			// this is taking screenshot for extent report
 	            String base64Screenshot = ((TakesScreenshot) BaseClass.sdriver).getScreenshotAs(OutputType.BASE64);
@@ -95,13 +95,13 @@ public class ListenerImplementationUtility implements ITestListener{
 		
 		try {
 			
-			s.captureScreenShot(BaseClass.sdriver, screenshotName);
+		//	s.captureScreenShot(BaseClass.sdriver, screenshotName);
 			
 			String base64Screenshot = ((TakesScreenshot) BaseClass.sdriver).getScreenshotAs(OutputType.BASE64);
             test.addScreenCaptureFromBase64String(base64Screenshot, methodName);
 			
 			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
