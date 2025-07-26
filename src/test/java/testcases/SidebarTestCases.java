@@ -47,7 +47,7 @@ public class SidebarTestCases extends BaseClass
 	 
   }
   @Test()
-  public void reesetApp()
+  public void resetApp()
   {
 	  
 	  menu.openMenu();
