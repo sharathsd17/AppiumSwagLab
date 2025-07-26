@@ -25,10 +25,11 @@ public class LoginScenariosTest extends BaseClass {
 
     @Test(priority = 2)
     public void testInvalidUsernamePassword() throws InterruptedException {
-        login.AppLogin("abc", "and");
+        login.AppLogin("us", "pass");
          Thread.sleep(2000);
         Boolean error = login.getInvalidLoginError();
         System.out.println(error);
+        
        
                   
                 		
