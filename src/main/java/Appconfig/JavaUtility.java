@@ -13,6 +13,8 @@ public class JavaUtility
 /**
  * This method capture the date from util package and formate to as simpledateformate (user friendly)and return 
  * @return Date
+ * xyz
+ * xyzabcccd
  */
 
 	public static String getSystemDate()
